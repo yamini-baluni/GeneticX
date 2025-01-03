@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Add the upstream remote (only once)
+git remote add upstream https://github.com/DiveIntoInfinity/GeneScope.git
+
+# Fetch the latest changes from the original repository
+git fetch upstream
+
+# Merge changes from upstream/main into his local main branch
+git checkout main
+git merge upstream/main
+
+# Push the changes to his fork
+git push origin main
