@@ -32,39 +32,39 @@ nav {
     z-index: 1;
     color: white;
 }
-
-.logo {
+#logo-title{
+    color: #00d6f7;
+    font-size: 29px;
+    font-weight: lighter;
+}
+.nav-links-container{
+    position: relative;
+    left: -204px;
     display: flex;
-    align-items: center;
-    font-size: 32px;
-    font-family: elephant;
+    width: 100vw;
+    justify-content: center;
 }
-
-.logo-img {
-    width: 45px;
-    height: 45px;
-}
-
-.logo a {
-  text-decoration: none;
-  color: inherit;
-}
-
-
 .nav-links {
-    list-style: none;
     display: flex;
-    margin-left: auto;
+    width: 50vw;
+    justify-content: space-between;
 }
 
 .nav-links li {
-    margin-right: 40px;
+    list-style: none;
+
 }
 
 .nav-links li a {
     text-decoration: none;
     color: white;
     font-size: 20px;
+}
+.more-btn {
+    background-color: #02c7e5;
+    padding: 7px 27px;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 .toggler {
@@ -119,6 +119,7 @@ nav {
   }
   
   .main-content {
+    width: 500px;
     text-align: center;
     color: #fff;
     padding: 20px;
@@ -143,20 +144,24 @@ nav {
   }
   
   .main p {
-      font-size: 25px;
+      font-size: 60px;
       text-shadow: 0 0 0 black;
       margin-bottom: 50px;
       color:white;
+      position: relative;
+      right: 111px;
   }
   
   .start-btn {
-      background-color: #8fc0f0;
-      color: black;
+      background-color: #008fc2;
+      color: #35e5f0;
       padding: 15px 20px;
-      border-radius: 50px;
+      border-radius: 20px;
       text-decoration: none;
       font-size: 25px;
       transition: background-color 0.5s, color 0.5s;
+      position: relative;
+      right: 111px;
   }
   
   .start-btn:hover {
