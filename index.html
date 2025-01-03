@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GenoScope</title>
-    <link rel="icon" type="image/jpg" href="images/logo2.jpg">
+    <title>GeneScope</title>
+    <link rel="icon" type="image/jpg" href="images/fav.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <nav>
         <div class="logo">
-            <h1 id="logo-title">GenoScope</h1>
+            <a href="index.html"> 
+                <img src="images/fav.png" alt="Logo" class="logo-img"></a>
+                <span>GeneScope</span> 
         </div>
         <div class="nav-links-container">
             <ul class="nav-links" id="nav-links">
@@ -33,24 +35,28 @@
 
     <section class="main">
             <video autoplay loop muted id="background-video">
-                <source src="video6.mp4" type="video/mp4">
+                <source src="videos/video6.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="main-content">
-                <h1>Decode Your DNA</h1>
-                <button>
-                    A N A L Y S E
-                    <div id="clip">
-                        <div id="leftTop" class="corner"></div>
-                        <div id="rightBottom" class="corner"></div>
-                        <div id="rightTop" class="corner"></div>
-                        <div id="leftBottom" class="corner"></div>
-                    </div>
-                    <span id="rightArrow" class="arrow"></span>
-                    <span id="leftArrow" class="arrow"></span>
-                </button>
+                <h1>Decode Your DNA </h1>
+<button class="button">
+    <span class="button_lg">
+        <span class="button_sl"></span>
+        <span class="button_text">Get Started</span>
+    </span>
+</button>
             </div>
     </section>
 
 </body>
 </html>
+
+<script>
+    const toggler = document.getElementById('toggler');
+const navLinks = document.getElementById('nav-links');
+
+toggler.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+</script>
