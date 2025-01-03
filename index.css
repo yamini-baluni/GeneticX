@@ -32,36 +32,24 @@ nav {
     z-index: 1;
     color: white;
 }
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 32px;
-    font-family: elephant;
+#logo-title{
+    color: #00d6f7;
+    font-size: 29px;
+    font-weight: lighter;
 }
-
-.logo-img {
-    width: 45px;
-    height: 45px;
-}
-
-.logo a {
-  text-decoration: none;
-  color: inherit;
-}
-
-
 .nav-links {
-    list-style: none;
     display: flex;
-    margin-left: auto;
+    width: 50vw;
+    justify-content: end;
 }
 
 .nav-links li {
-    margin-right: 40px;
+    list-style: none;
+
 }
 
 .nav-links li a {
+    margin: 0 20px;
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -109,16 +97,18 @@ nav {
         margin-left: auto;
     }
 }
-
-  .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main{
     height: 100vh;
-    overflow: hidden;
-  }
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
   
   .main-content {
+    margin-right: 50px;
+    width: 800px;
+    height: 300px;
     text-align: center;
     color: #fff;
     padding: 20px;
@@ -136,27 +126,32 @@ nav {
   }
 
   .main h1 {
-      font-size: 80px;
+
+      font-size: 75px;
       margin-bottom: 20px;
       text-shadow: 10px 15px 10px black;
       font-family: 'BerkshireSwash-Regular';
   }
   
   .main p {
-      font-size: 25px;
+      font-size: 60px;
       text-shadow: 0 0 0 black;
       margin-bottom: 50px;
       color:white;
+      position: relative;
+      right: 111px;
   }
   
   .start-btn {
-      background-color: #8fc0f0;
-      color: black;
+      background-color: #008fc2;
+      color: #35e5f0;
       padding: 15px 20px;
-      border-radius: 50px;
+      border-radius: 20px;
       text-decoration: none;
       font-size: 25px;
       transition: background-color 0.5s, color 0.5s;
+      position: relative;
+      right: 111px;
   }
   
   .start-btn:hover {
