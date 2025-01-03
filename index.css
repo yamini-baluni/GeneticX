@@ -37,17 +37,10 @@ nav {
     font-size: 29px;
     font-weight: lighter;
 }
-.nav-links-container{
-    position: relative;
-    left: -204px;
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-}
 .nav-links {
     display: flex;
     width: 50vw;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 .nav-links li {
@@ -56,15 +49,10 @@ nav {
 }
 
 .nav-links li a {
+    margin: 0 20px;
     text-decoration: none;
     color: white;
     font-size: 20px;
-}
-.more-btn {
-    background-color: #02c7e5;
-    padding: 7px 27px;
-    border-radius: 30px;
-    cursor: pointer;
 }
 
 .toggler {
@@ -109,17 +97,18 @@ nav {
         margin-left: auto;
     }
 }
-
-  .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main{
     height: 100vh;
-    overflow: hidden;
-  }
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
   
   .main-content {
-    width: 500px;
+    margin-right: 50px;
+    width: 800px;
+    height: 300px;
     text-align: center;
     color: #fff;
     padding: 20px;
@@ -137,7 +126,8 @@ nav {
   }
 
   .main h1 {
-      font-size: 80px;
+
+      font-size: 75px;
       margin-bottom: 20px;
       text-shadow: 10px 15px 10px black;
       font-family: 'BerkshireSwash-Regular';
