@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/fav.png">
+    <link rel="stylesheet" href="form.css">
+    <title>GeneScope - Form</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"> 
+                <img src="images/fav.png" alt="Logo" class="logo-img"></a>
+                <span>GeneScope</span> 
+        </div>
+        <div class="nav-links-container">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </div>
+
+        <div class="toggler" id="toggler">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <section class="form-container">
+        <h1>Analysis Metrics</h1>
+        <div class="form">
+            <pre>
+            <h2>Get Your Analysis</h2>
+            <p>Upload your DNA sequence to begin</p></pre>
+            <form action="">
+                <label for="">DNA Sequence</label>
+                <input type="text" placeholder="Paste your sequence here" class="input">
+                <input type="file" id="file-input">
+                
+                <label for="">Name</label>
+                <input type="text" placeholder="Enter your Name" class="input" id="name-input">
+
+                <label for="">Email</label>
+                <input type="email" placeholder="Enter your email" class="input" id="email-input">
+
+                <button id="form-btn">Submit</button>
+            </form>
+        </form>
+    </section>
+    <script src="form.js"></script>
+</body>
+</html>
