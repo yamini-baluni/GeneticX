@@ -1,5 +1,6 @@
 const dynamicWord = document.getElementById("dynamic-word");
 const words = ["DNA", "GENES", "GENOMES", "HEREDITY"];  // Words to cycle through
+
 let currentWordIndex = 0;
 
 setInterval(() => {
@@ -11,3 +12,4 @@ setInterval(() => {
         currentWordIndex = (currentWordIndex + 1) % words.length;
     }, 1000);  // Transition delay for each word change
 }, 4000);  // Change word every 4 seconds
+
