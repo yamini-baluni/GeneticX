@@ -18,16 +18,15 @@ body {
 nav {
     margin-top: 0;
     width: 100vw;
+    background-color: #041422;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #0a1526;
     opacity: 0.9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
-    z-index: 1;
     color: white;
 }
 
@@ -52,14 +51,22 @@ nav {
     display: flex;
     width: 50vw;
     justify-content: end;
+    align-items: center;
+    padding-right: 20px;
 }
 
 .nav-links li {
     list-style: none;
 }
 
+.bx-user-circle {
+    color: aqua;
+    font-size: 45px;
+    cursor: pointer;
+}
+
 .nav-links li a {
-    margin: 0 20px;
+    margin: 0 40px;
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -108,69 +115,228 @@ nav {
     }
 }
 
+
 .form-container {
+    background: linear-gradient(to top, #000, #072844 100%, #072844);
+    height: 700px;
+    width: 100vw;
+    padding: 45px 90px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
-}
-.form-container h1 {
-    padding-top: 40px;
-}
-.form {
-    display: flex;
-    align-items: center;
-    height: 600px;
-    width: 80vw;
-}
-.form pre h2 {
-    font-size: 40px;
+    justify-content: space-between;
 }
 
-.form pre p{
-    font-size: 18px;
-}
-
-form{
-    margin-left: 350px;
+.steps-info {
     display: flex;
     flex-direction: column;
+    width: 45%;
+    height: 500px;
 }
 
-.input {
-    background-color: #0a1526;
-    width: 500px;
-    height: 32px;
-    padding-left: 10px;
-    font-size: 16px;
-    border: 2px solid #444;
-    border-radius: 5px;
-    outline: none;
-    background-color: #1e1e1e;
+.steps-info h1 {
     color: #fff;
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    font-size: 50px;
 }
 
-form label {    
-    margin-top: 20px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-input:focus {
-    border: 2px solid red;
-}
-#file-input {
-    display: inline-block;
-    position: relative;
-    bottom: 26px;
-    left: 319px;
-}
-#form-btn {
-    margin-top: 30px;
-    height: 30px;
-    width: 30%;
-    background-color: #000;
-    color: #fff;
-    border: 2px solid red;
+.step {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    border: 1px solid #acb0b4;
     border-radius: 30px;
+    background: linear-gradient(to left, #000, #000 90%, #2a2929);
+    padding-left: 20px;
+}
+
+.step p {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: .25px;
+    color: #acb0b4;
+
+}
+
+.step-2 {
+    margin-top: 60px;
+    width: 600px;
+    background: linear-gradient(to left, #000, #000 90%, #2a2929);
+
+}
+
+.step-3 {
+    margin-left: 85px;
+    position: absolute;
+    bottom: 5%;
+    width: 85vw;
+    background: linear-gradient(to left, #000, #000 70%, #2a2929);
+}
+
+.step-3 p {
+    letter-spacing: 1px;
+}
+
+.form-container form {
+    color: #fff;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    padding-left: 30px;
+    background: linear-gradient(to right, #062642, #000);
+    border-radius: 30px;
+
+}
+
+form {
+    padding-left: 20px;
+}
+
+form label {
+    font-size: 17px;
+}
+
+#max-file-size {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #acb0b4;
+}
+
+#name {
+    margin-top: 10px;
+}
+
+#email {
+    margin-top: 30px;
+}
+
+#name-input, #email-input {
+    width: 300px;
+    height: 27px;
+    padding-left: 10px;
+    border: 2px solid #00DDFF;
+    border-radius: 5px;
+    background: linear-gradient(to left, #000, #072844);
+}
+
+/* From Uiverse.io by akshat-patel28 */ 
+.input-div {
+    margin-top: 20px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(1, 235, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 100px rgb(1, 235, 252) , inset 0px 0px 10px rgb(1, 235, 252),0px 0px 5px rgb(255, 255, 255);
+    animation: flicker 2s linear infinite;
+  }
+  
+  .icon {
+    color: rgb(1, 235, 252);
+    font-size: 1.5rem;
+    cursor: pointer;
+    animation: iconflicker 2s linear infinite;
+  }
+  
+  .input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer !important;
+  }
+  
+  @keyframes flicker {
+    0% {
+      border: 2px solid rgb(1, 235, 252);
+      box-shadow: 0px 0px 100px rgb(1, 235, 252) , inset 0px 0px 10px rgb(1, 235, 252),0px 0px 5px rgb(255, 255, 255);
+    }
+  
+    5% {
+      border: none;
+      box-shadow: none;
+    }
+  
+    10% {
+      border: 2px solid rgb(1, 235, 252);
+      box-shadow: 0px 0px 100px rgb(1, 235, 252) , inset 0px 0px 10px rgb(1, 235, 252),0px 0px 5px rgb(255, 255, 255);
+    }
+  
+    25% {
+      border: none;
+      box-shadow: none;
+    }
+  
+    30% {
+      border: 2px solid rgb(1, 235, 252);
+      box-shadow: 0px 0px 100px rgb(1, 235, 252) , inset 0px 0px 10px rgb(1, 235, 252),0px 0px 5px rgb(255, 255, 255);
+    }
+  
+    100% {
+      border: 2px solid rgb(1, 235, 252);
+      box-shadow: 0px 0px 100px rgb(1, 235, 252) , inset 0px 0px 10px rgb(1, 235, 252),0px 0px 5px rgb(255, 255, 255);
+    }
+  }
+  
+  @keyframes iconflicker {
+    0% {
+      opacity: 1;
+    }
+  
+    5% {
+      opacity: 0.2;
+    }
+  
+    10% {
+      opacity: 1;
+    }
+  
+    25% {
+      opacity: 0.2;
+    }
+  
+    30% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+.agree-check {
+    color: #fff;
+}
+
+.checkbox-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    height: 17px;
+    width: 185px;
+    background: linear-gradient(to right, #000, #072844);
+    margin-top: 7px;
+}
+
+#checkbox {
+    margin-right: 5px;
+}
+
+#agree-check {
+    font-size: 10px;
+}
+
+#submit-btn {
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #00DDFF;
+    width: 80px;
 }
