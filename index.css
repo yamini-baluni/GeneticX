@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
@@ -68,6 +68,19 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 20px;
+}
+
+#signin-btn, #register-btn {
+    width: 60px;
+    height: 27px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+#register-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 .toggler {
@@ -268,43 +281,186 @@ nav {
 .button:hover .button_sl {
     width: calc(100% + 15px);
 }
+
+.website-container {
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #041422);
+}
+
+.website-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 250px;
+    width: 100%;
+}
+
+.website-container h2, .website-container h2 p {
+    display: inline;
+    font-size: 40px;
+}
+
+.website-container p {
+    color: #00DDFF;
+}
+
+.sub-section {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-section p {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.sub-section-content {
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(to bottom, #041422, #002648 80%, #b3b3b3);
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.sub-section-content p {
+    letter-spacing: .25px;
+    font-size: 20px;
+}
+
+.meetOurTeam {
+    height: 800px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid yellow;
+    align-items: center;
+    background: linear-gradient(to top right, #000, #000 70%, #072844);
+}
+
+.meetOurTeam h2 {
+    font-size: 45px;
+    display: inline;
+    color: #fff;
+}
+
+.meetOurTeam p {
+    font-size: 45px;
+    display: inline;
+    color: #00DDFF;
+}
+
+.team-info {
+    margin-top: 90px;
+    height: 500px;
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid #fff;
+    border-radius: 70px;
+}
+
+.team-cards {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+}
+
+.team-cards img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.team-cards #name {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.team-cards p {
+    margin-top: 7px;
+    color: #acb0b4;
+    font-size: 18px;
+}
+
+.team-media {
+    margin-top: 30px;
+}
+
+.team-media i {
+    margin: 0 2px;
+    background-color: #00DDFF;
+    padding: 6px;
+    border-radius: 50%;
+}
+
 footer {
-    background-color: #003554;
+    background-image: radial-gradient(circle, #062743, #01060a);
+    
 }
 
 .footer-container {
-    padding: 23px 143px 94px 143px;
+    padding: 23px 143px 94px 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-about {
-    width: 500px;
+    width: 300px;
     text-align: center;
 }
 
-.footer-contact {
-    width: 200px;
+.footer-about img {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+.footer-services {
+    width: 250px;
     text-wrap: wrap;
 }
 
 footer h6 {
+    display: inline;
     text-align: center;
     font-size: 30px;
     color: #fff;
     margin-bottom: 10px;
-    font-family: "Rubik Vinyl", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
 }
 
 footer p {
-    font-family: "Big Shoulders Text", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     padding-left: 5px;
+    color: #acb0b4;
+
+}
+
+#about-para {
+    letter-spacing: .75px;
 }
 
 footer ul {
@@ -314,13 +470,48 @@ footer ul {
 
 footer ul li {
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 15px;
     text-transform: capitalize;
+    color: #acb0b4;
+
 }
+
+.footer-newsletter {
+    width: 270px;
+}
+
+.footer-newsletter p {
+    margin-top: 3px;
+    font-size: 15px;
+    letter-spacing: .25px;
+}
+
+#footer-email {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    border: 2px solid #00DDFF;
+    border-radius: 4px;
+    background: linear-gradient(to right, #000, #072844);
+    color: #acb0b4;
+    outline: none;
+}
+
+#btn-newsletter {
+    margin-top: 5px;
+    width: 100%;
+    height: 23px;
+    background-color: #00DDFF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
 .social-media {
     display: flex;
+    margin-left: 45px;
     flex-direction: column;
-    align-items: end;
     padding-bottom: 45px;
 }
 
@@ -335,12 +526,20 @@ footer ul li {
 .social-media i {
     color: #000;
     font-size: 30px;
-    background-color: blue;
-    padding: 7px;
+    background-color: #00DDFF;
+    padding: 6px;
+    cursor: pointer;
     border-radius: 50%;
     margin: 0 5px;
 }
+
+hr {
+    margin: 0 80px;
+}
+
 .copyright {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 20px;
