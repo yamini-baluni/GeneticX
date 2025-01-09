@@ -346,7 +346,6 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid yellow;
     align-items: center;
     background: linear-gradient(to top right, #000, #000 70%, #072844);
 }
@@ -377,6 +376,7 @@ nav {
 
 .team-cards {
     height: 400px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
