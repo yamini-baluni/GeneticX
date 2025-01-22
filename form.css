@@ -217,6 +217,8 @@ form label {
     padding-left: 10px;
     border: 2px solid #00DDFF;
     border-radius: 5px;
+    outline: none;
+    color: #fff;
     background: linear-gradient(to left, #000, #072844);
 }
 
