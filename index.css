@@ -9,6 +9,7 @@
 }
 
 html {
+    cursor: url('images/fav.png'), auto;
     scroll-behavior: smooth;
 }
 
@@ -340,6 +341,35 @@ nav {
     font-size: 20px;
 }
 
+.services-container {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.services-container h3 {
+    font-size: 40px;
+}
+
+.services-container p{
+    text-align: center;
+    height: 35px;
+    width: 450px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.services-subcontainer {
+    background: radial-gradient(ellipse at top center, #0E4F85, #000 45%);
+    height: 400px;
+    width: 80vw;
+    border-radius: 30px;
+    border: 2px solid gray;
+}
+
 .meetOurTeam {
     height: 800px;
     width: 100vw;
@@ -412,8 +442,119 @@ nav {
     border-radius: 50%;
 }
 
+.questions-container {
+    height: 700px;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions-container h3 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.questions-container p {
+    font-size: 25px;
+    letter-spacing: .75px;
+}
+
+.questions-subcontainer {
+    margin-top: 40px;
+    height: 150px;
+    border: 1px solid gray;
+    width: 60vw;
+    border-radius: 20px;
+    background: linear-gradient(to right, #6b6d6e, #000);
+    padding: 10px 20px;
+
+}
+
+.questions-subcontainer h3 {
+    font-size: 25px;
+    display: inline;
+}
+
+
+.questions-subcontainer p {
+    font-size: 20px;
+}
+
+.questions-container h3 p {
+    display: inline;
+    font-size: 32px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.intro i {
+    cursor: pointer;
+    padding: 5px;
+
+    &:hover{
+        border: 1px solid gray;
+    }
+}
+
+.question {
+    margin-top: 30px;
+    width: 60vw;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+.question h3 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.subQues1,
+.subQues2,
+.subQues3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question i {
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.content-1,
+.content-2,
+.content-3 {
+    position: relative;
+    right: 10px;
+    margin-top: 20px;
+    display: none;
+    height: 60px;
+    padding-left: 20px;
+    width: 60vw;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    
+}
+
 footer {
-    background-image: radial-gradient(circle, #062743, #01060a);
+    background: radial-gradient(circle, #062743, #01060a);
     
 }
 
