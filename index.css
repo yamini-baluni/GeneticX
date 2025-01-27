@@ -1,11 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", serif;
 }
 
 html {
@@ -39,9 +40,13 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 32px;
-    font-family: elephant;
-    cursor: pointer;
+}
+.logo span {
+    font-size: 60px;
+    
+    font-family: "Montez", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .logo-img {
@@ -333,12 +338,67 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: Arial, sans-serif;
 }
 
 .sub-section-content p {
     letter-spacing: .25px;
     font-size: 20px;
+    font-family: "Roboto", serif;
+    font-weight: normal;
+}
+
+.info-container {
+    margin: 50px 0;
+    height: 600px;
+    width: 100vw;
+    background-image: url(images/DNA-pic.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-info {
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vw;
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+}
+
+.main-info-card {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.main-info-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.main-info-card hr {
+    width: 25%;
+    height: 3px;
+    background-color: white;
+}
+
+.main-info-card h3 {
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.main-info-card p {
+    font-size: 20px;
+    text-align: center;
+    font-family: "poppins", serif;
+    font-weight: 400;
 }
 
 .services-container {
@@ -364,10 +424,109 @@ nav {
 
 .services-subcontainer {
     background: radial-gradient(ellipse at top center, #0E4F85, #000 45%);
-    height: 400px;
+    height: 600px;
     width: 80vw;
     border-radius: 30px;
     border: 2px solid gray;
+}
+
+.services-cards-cont {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.services-cards-cont p {
+    font-family: "Poppins", serif;
+}
+
+.card {
+    height: 100%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.card img,
+.card i {
+    font-size: 50px;
+}
+
+.card h3 {
+    font-size: 35px;
+}
+
+.card p {
+    color: #acb0b4;
+}
+
+.analysis-container {
+    height: 700px;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #041422 0%, #041422 40%, #072844 60%, #072844 100%);
+}
+
+.analysis-container h3 {
+    font-size: 50px;
+}
+
+.analysis-subcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    align-items: center;
+}
+
+.analysis-card {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+
+}
+
+.analysis-card img {
+    border-radius: 30px;
+    width: 100%;
+    height: 230px;
+}
+
+.analysis-card h4 {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.analysis-card p {
+    font-size: 25px;
+    margin-top: 10px;
+    width: 25vw;
+    text-wrap: wrap;
+}
+
+.analysis-card button {
+    margin-top: 40px;
+    width: 150px;
+    height: 75px;
+    cursor: pointer;
+    background-color: #000;
+    color: #00ddff;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    font-family: "Lancelot", serif;
+    
 }
 
 .meetOurTeam {
@@ -393,7 +552,7 @@ nav {
 }
 
 .team-info {
-    margin-top: 90px;
+    margin-top: 50px;
     height: 500px;
     width: 95vw;
     display: flex;
@@ -402,6 +561,7 @@ nav {
     padding: 0 20px;
     border: 1px solid #fff;
     border-radius: 70px;
+    flex-wrap: wrap;
 }
 
 .team-cards {
@@ -429,6 +589,7 @@ nav {
     margin-top: 7px;
     color: #acb0b4;
     font-size: 18px;
+    font-family: "Poppins", serif;
 }
 
 .team-media {
@@ -464,7 +625,7 @@ nav {
 
 .questions-subcontainer {
     margin-top: 40px;
-    height: 150px;
+    height: 60px;
     border: 1px solid gray;
     width: 60vw;
     border-radius: 20px;
@@ -481,6 +642,9 @@ nav {
 
 .questions-subcontainer p {
     font-size: 20px;
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .questions-container h3 p {
@@ -494,63 +658,55 @@ nav {
     color: #fff;
     padding-top: 10px;
     padding-right: 20px;
+    margin-top: 6px;
 }
 
 .intro i {
     cursor: pointer;
     padding: 5px;
-
-    &:hover{
-        border: 1px solid gray;
-    }
 }
 
-.question {
-    margin-top: 30px;
-    width: 60vw;
-    height: 50px;
-    border: 1px solid gray;
-    border-radius: 15px;
-    padding: 0 10px;
-}
 
-.question h3 {
-    font-size: 30px;
-    font-weight: normal;
-}
-
-.subQues1,
-.subQues2,
-.subQues3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.question i {
-    cursor: pointer;
-    height: 22px;
-    width: 22px;
+.last-section {
+    height: 500px;
+    width: 100vw;
+    background: url(images/dna-pic2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    border-radius: 50%;
-    border: 1px solid #fff;
+    color: #fff;
 }
 
-.content-1,
-.content-2,
-.content-3 {
-    position: relative;
-    right: 10px;
-    margin-top: 20px;
-    display: none;
-    height: 60px;
-    padding-left: 20px;
+.sub-section {
     width: 60vw;
-    border: 2px solid #fff;
+    height: 150px;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sub-section h6 {
+    font-size: 40px;
+}
+
+.sub-section p {
+    font-size: 25px;
+}
+
+.last-section button {
+    width: 120px;
+    height: 40px;
     border-radius: 10px;
-    
+    margin-top: 30px;
+    cursor: pointer;
+    border: 2px solid #00DDFF;
+    background-color: #000;
+    color: #fff;
 }
 
 footer {
@@ -587,9 +743,9 @@ footer h6 {
     font-size: 30px;
     color: #fff;
     margin-bottom: 10px;
-    font-family: "Newsreader", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
+    font-family: "Montez", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 footer p {
@@ -654,6 +810,8 @@ footer ul li {
     margin-left: 45px;
     flex-direction: column;
     padding-bottom: 45px;
+    position: relative;
+    left: 40px;
 }
 
 .social-media-icons {
@@ -685,4 +843,69 @@ hr {
     text-align: center;
     font-size: 20px;
     padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 1600px) {
+    html {
+        overflow-x: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .website-container h2 {
+        font-size: 35px;
+    }
+    .website-container {
+        height: auto;
+    }
+    .website-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub-section {
+        margin: 50px 0;
+        
+    }
+    
+    .main-info{
+        width: 100vw;
+    }
+    
+    .responsive-card-vanish {
+        display: none;
+    }
+
+    .services-cards-cont {
+        justify-content: center;
+    }
+
+    .card h3, .card p {
+        word-wrap: break-word;
+    }
+
+    .analysis-container h3 {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    .team-info,
+    .meetOurTeam {
+        height: auto;
+    }
+
+    .meetOurTeam h2, .meetOurTeam h2 p {
+        margin: 50px 0;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .team-info {
+        margin-top: 0;
+        
+    }
 }
